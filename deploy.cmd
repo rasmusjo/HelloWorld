@@ -75,21 +75,21 @@ IF /I "HelloWorldDyna.sln" NEQ "" (
 
 :: 2. Build to the temporary path
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
-  call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%HelloWorldDyna\HelloWorldDyna\HelloWorldDyna.csproj" /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="%DEPLOYMENT_TEMP%";AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release;UseSharedCompilation=false /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
+  call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\HelloWorldDyna\HelloWorldDyna\HelloWorldDyna.csproj" /nologo /verbosity:m /t:Build /t:pipelinePreDeployCopyAllFilesToOneFolder /p:_PackageTempDir="%DEPLOYMENT_TEMP%";AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release;UseSharedCompilation=false /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
 ) ELSE (
-  call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%HelloWorldDyna\HelloWorldDyna.csproj" /nologo /verbosity:m /t:Build /p:AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release;UseSharedCompilation=false /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
+  call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\HelloWorldDyna\HelloWorldDyna.csproj" /nologo /verbosity:m /t:Build /p:AutoParameterizationWebConfigConnectionStrings=false;Configuration=Release;UseSharedCompilation=false /p:SolutionDir="%DEPLOYMENT_SOURCE%\.\\" %SCM_BUILD_ARGS%
 )
 
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 2. Building test project
 echo Building test project
-"%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%HelloWorldDyna\HelloWorldDyna.Tests\HelloWorldDyna.Tests.csproj"
+"%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\HelloWorldDyna\HelloWorldDyna.Tests\HelloWorldDyna.Tests.csproj"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 3. Running tests
 echo Running tests
-vstest.console.exe "%DEPLOYMENT_SOURCE%HelloWorldDyna\HelloWorldDyna.Tests\bin\Debug\HelloWorldDyna.Tests.dll"
+vstest.console.exe "%DEPLOYMENT_SOURCE%\HelloWorldDyna\HelloWorldDyna.Tests\bin\Debug\HelloWorldDyna.Tests.dll"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 3. KuduSync
