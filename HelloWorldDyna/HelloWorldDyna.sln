@@ -5,10 +5,6 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDyna", "HelloWorldDyna\HelloWorldDyna.csproj", "{6E1FF4D0-456C-4FDB-8E0A-393EE1ECD6F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDyna.Tests", "HelloWorldDyna.Tests\HelloWorldDyna.Tests.csproj", "{5C0EEB8D-3A39-45FC-823A-140910D5006A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebJob", "TestWebJob\TestWebJob.csproj", "{7300A45D-DA3C-4406-9844-C65B9549F99A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +15,6 @@ Global
 		{6E1FF4D0-456C-4FDB-8E0A-393EE1ECD6F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6E1FF4D0-456C-4FDB-8E0A-393EE1ECD6F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6E1FF4D0-456C-4FDB-8E0A-393EE1ECD6F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C0EEB8D-3A39-45FC-823A-140910D5006A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C0EEB8D-3A39-45FC-823A-140910D5006A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C0EEB8D-3A39-45FC-823A-140910D5006A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C0EEB8D-3A39-45FC-823A-140910D5006A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7300A45D-DA3C-4406-9844-C65B9549F99A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7300A45D-DA3C-4406-9844-C65B9549F99A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7300A45D-DA3C-4406-9844-C65B9549F99A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7300A45D-DA3C-4406-9844-C65B9549F99A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
