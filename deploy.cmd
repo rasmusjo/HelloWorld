@@ -89,7 +89,7 @@ IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 4. Running tests
 echo Running tests
-vstest.console.exe "%DEPLOYMENT_SOURCE%\HelloWorldDynaTests\bin\Debug\HelloWorldDynaTests.dll"
+vstest.console.exe "%DEPLOYMENT_SOURCE%HelloWorldDynaTests\bin\Debug\HelloWorldDynaTests.dll"
 IF !ERRORLEVEL! NEQ 0 goto error
 
 :: 5. KuduSync
