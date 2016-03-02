@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDyna", "HelloWorl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorldDynaTests", "HelloWorldDynaTests\HelloWorldDynaTests.csproj", "{BFBA1285-F517-4597-A9C9-6784C89CB714}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestWebJob", "TestWebJob\TestWebJob.csproj", "{A541ABA6-515B-43FF-A7A1-28146CB56920}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BFBA1285-F517-4597-A9C9-6784C89CB714}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFBA1285-F517-4597-A9C9-6784C89CB714}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFBA1285-F517-4597-A9C9-6784C89CB714}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A541ABA6-515B-43FF-A7A1-28146CB56920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A541ABA6-515B-43FF-A7A1-28146CB56920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A541ABA6-515B-43FF-A7A1-28146CB56920}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A541ABA6-515B-43FF-A7A1-28146CB56920}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
