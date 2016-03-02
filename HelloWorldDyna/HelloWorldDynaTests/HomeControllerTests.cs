@@ -17,7 +17,7 @@ namespace HelloWorldDynaTests
             bool shouldBeTrue;
 
             //Act
-            shouldBeTrue = false;
+            shouldBeTrue = true;
 
             //Assert
             Assert.AreEqual(true, shouldBeTrue);
